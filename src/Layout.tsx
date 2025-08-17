@@ -5,7 +5,11 @@ type LayoutProps = {
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return <div>{children}</div>;
+  return (
+    <div className="min-h-screen min-w-screen flex justify-center items-center">
+      {children}
+    </div>
+  );
 };
 
 export { Layout };

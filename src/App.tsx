@@ -1,5 +1,5 @@
 import { Layout } from "./Layout";
-import { QrCodeGenerator } from "./QrCodeGenerator";
+import { QrCodeGenerator } from "./components/QrCodeGenerator";
 
 function App() {
   return (
