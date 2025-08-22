@@ -1,4 +1,5 @@
 import type React from "react";
+import { Sidebar } from "./components/Sidebar.tsx";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -6,7 +7,8 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen min-w-screen flex justify-center items-center">
+    <div className="flex flex-col min-h-screen min-w-screen justify-center items-center relative">
+      <Sidebar />
       {children}
     </div>
   );
